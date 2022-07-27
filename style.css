@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+font-family: 'Fira Code', 'monospace';
+  background-color: #134f5c;
+  color: #d9d9d9;
+}
+
+p {
+  margin: 5px 0;
+}
+
+h2 {
+  margin: 10px 0 20px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+}
+
+input[type="checkbox"] {
+  margin-right: 0;
+}
+
+.container {
+  align-items: center;
+  border: 2px solid #efefef;
+  border-radius: 10px;
+  padding: 20px;
+  width: 350px;
+  max-width: 100%;
+  margin:auto;
+  margin-top: 10%;
+}
+
+.result-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  font-size: 18px;
+  letter-spacing: 1px;
+  height: 60px;
+  width: 100%;
+  margin-bottom: 35px;
+}
+
+textarea {
+  background: none;
+  border: none;
+  font-size: 20px;
+  margin-top: auto;
+  outline: none;
+  resize: none;
+}
+
+#PasswordResult {
+    font-family: monospace;
+    color: #ffd966;
+    font-size: 24px;
+    font-style: normal;
+    line-height: 24px;
+    font-weight: 700;
+    text-align: end;
+}
+#Passwordlength {
+    font-family: 'Montserrat' !important;
+    font-size: 18px;
+    font-style: normal !important;
+    line-height: 24px;
+    font-weight: 900;
+    color:#434343;
+    text-align: center;
+    background-color: #efefef;
+}
+
+.result-container .btn {
+  font-size: 20px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 40px;
+  width: 40px;
+}
+
+.buttons {
+  display: flex;
+}
+
+.btn {
+  width: 50%;
+  border: none;
+  cursor: pointer;
+  color:#efefef;
+  background: #134f5c;
+  font-size: 24px;
+  line-height: 30px;
+  font-style:normal;
+  font-weight: 700;
+  padding: 8px 12px;
+  margin: 14px 5px 7px 5px;
+  text-align: right;
+}
+
+.btn:hover {
+  filter: var(--filter3);
+  transition: 0.3s ease-in-out;
+}
+
+.setting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+
+@media screen and (max-width: 400px) {
+  .result-container {
+    font-size: 14px;
+  }
+}
